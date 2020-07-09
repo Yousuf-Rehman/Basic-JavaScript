@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 36;
+  color: wheat;
+}
+
+section#search-Section {
+  margin: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  text-align: center;
+}
+
+#SearchBar {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+div#img-container{
+  padding: 10px;
+}
+
+button{
+  font-size: 36;
+  padding: 10px 20px;
+  border: 1px black solid;
+  border-radius: 20px;
+  background-color: cornflowerblue;
+  outline:none;
+}
+button:hover{
+  background-color: blue;
+}
+
+button:active{
+  background-color: cornflowerblue;
+}
