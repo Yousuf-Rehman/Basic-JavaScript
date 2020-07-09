@@ -1,0 +1,12 @@
+{
+  "name":"RandomlyLoad-ImgFromLocalFolder",
+  "description":"A javascript random image generator app",
+  "dependencies":{
+    "express":"4.x"
+  },
+  "start":"npm start",
+  "author":["Yousaf-Rehman","atifcpprogrammer"],
+  "version":"0.0.1",
+  "private":true
+}
+

@@ -1,6 +1,6 @@
 'use strict'
 let xhr = new XMLHttpRequest();
-let IP = '127.0.0.1:5500'
+let IP = '127.0.0.1:8080'
 let url = `http://${IP}/images/`
 xhr.responseType = 'document';
 
