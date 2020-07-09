@@ -1,0 +1,14 @@
+{
+  "name": "RandomlyLoad-ImgFromLocalFolder",
+  "description": "a javascript image randomizer app",
+  "dependencies": {
+    "express": "4.x"
+  },
+  "start": "npm start",
+  "authors": [
+    "Yousuf-Rehman",
+    "atifcppprogrammer"
+  ],
+  "private": true,
+  "version": "0.0.1"
+}
