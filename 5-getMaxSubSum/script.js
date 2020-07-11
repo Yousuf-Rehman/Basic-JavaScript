@@ -1,16 +1,13 @@
 'use strict'
 
 let getMaxSubSum = arr => {
-    let maxSum = arr[0]
-    let tempSum;
+    let maxSum = 0
+    let tempSum = 0;
     //work for the contiguous subarray
-    for(let i = 0; i < arr.length; i++){//start from one element, till the whole array
-        tempSum = 0
-        for(let j = i; j < arr.length; j++){
-            tempSum = tempSum + arr[j]
-            if(maxSum < tempSum)
-                maxSum = tempSum;
-        }
+    for(let e of arr){//start from one element, till the whole array
+        tempSum += e
+        maxSum = Math.max(maxSum, tempSum)//if tempSum always negativr then maxSum = , if one time pos that will store in maxSUm
+        if(tempSum < 0) tempSum = 0
     }
     return maxSum
 }
