@@ -3,21 +3,13 @@
 let getMaxSubSum = arr => {
     let maxSum = arr[0]
     let tempSum;
-    let FixedIndex;
     //work for the contiguous subarray
     for(let i = 0; i < arr.length; i++){//start from one element, till the whole array
-        FixedIndex = i + 1
         tempSum = 0
-        for(let j = i; j < FixedIndex; j++){
+        for(let j = i; j < arr.length; j++){
             tempSum = tempSum + arr[j]
             if(maxSum < tempSum)
                 maxSum = tempSum;
-
-            
-            if(j+1 >= FixedIndex && FixedIndex < arr.length && FixedIndex++){//moving FixedIndex to next until it becom arrr.length
-                tempSum = 0
-                j = i - 1
-            }
         }
     }
     return maxSum
